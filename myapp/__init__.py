@@ -47,7 +47,7 @@ def request_loader(request):
 
 @app.route('/')
 def homepage():
-    return 'hello'
+    return 'hello, welcom'
 
 
 @app.route('/login/', methods=['GET', 'POST'])
