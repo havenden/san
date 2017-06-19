@@ -1,0 +1,33 @@
+{% extends 'main.html' %}
+
+{% block title %}
+用户登录
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <form action="/login/" method="post">
+            <div class="row">
+                <div class="input-field col s6 offset-s3">
+                    <input id="email" type="email" name="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6 offset-s3">
+                    <input id="password" name="pw" type="password" class="validate">
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6 offset-s3 center-align">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
